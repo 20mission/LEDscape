@@ -935,7 +935,7 @@ int validate_server_config(
 	assert_int_range_inclusive("LED Count", 1, 1024, input_config->leds_per_strip);
 
 	// usedStripCount
-	assert_int_range_inclusive("Strip/Channel Count", 1, 48, input_config->used_strip_count);
+	assert_int_range_inclusive("Strip/Channel Count", 1, 2, input_config->used_strip_count);
 
 	// colorChannelOrder
 	assert_enum_valid("Color Channel Order", input_config->color_channel_order);
